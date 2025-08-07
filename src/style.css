@@ -1,0 +1,147 @@
+:root {
+  --bg-gray-500: #242424;
+  --font-primary: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+
+  color-scheme: dark light;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: var(--bg-gray-500);
+}
+
+body {
+  font-family: var(--font-primary);
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+h1 {
+  font-size: 3.2em;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.title {
+  text-align: center;
+}
+
+.main-container {
+  margin: 0 auto;
+  min-height: 100vh;
+  width: 100wv;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.container {
+  min-width: min(95%);
+}
+
+.header,
+footer {
+  padding: 1rem 0;
+  margin: 0;
+  background-color: black;
+  width: 100%;
+  text-align: center;
+}
+
+.form {
+  width: auto;
+  margin: 0 auto;
+  padding: 1rem;
+  background-color: crimson;
+  opacity: 80%;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form__div,
+.form__div-snippet {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+label {
+  font-weight: 700;
+}
+
+.form__input-name,
+.form__snippet-textarea {
+  display: block;
+  width: inherit;
+  margin: 0;
+}
+
+.form__input-name {
+  padding: 0.5rem 1rem;
+}
+.form__snippet-textarea {
+  padding: 1rem;
+  resize: vertical;
+}
+
+input,
+textarea {
+  font-size: 1rem;
+  background: var(--bg-gray-500);
+  border-radius: 0.5rem;
+  border: 2px solid gray;
+  &&:focus {
+    outline: none;
+  }
+}
+
+.form__input-submit {
+  padding: 0.5rem 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  background-color: mintcream;
+  color: black;
+  transition: background 0.3s ease;
+  cursor: pointer;
+  &&:hover {
+    background-color: rgb(214, 224, 219);
+  }
+}
+
+.alert {
+  width: inherit;
+  text-align: center;
+  background-color: rgb(248, 41, 41);
+  border: rgb(235, 195, 195) 1px solid;
+  border-radius: 0.5rem;
+  padding: 0.375rem;
+  color: rgb(243, 196, 196);
+  font-weight: 600;
+}
+
+.hidden {
+  display: none;
+}
+
+.notification {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  animation: normal 0.5s enter;
+}
+
+@keyframes enter {
+  0% {
+    left: 20rem;
+  }
+  100% {
+    right: 1rem;
+  }
+}
