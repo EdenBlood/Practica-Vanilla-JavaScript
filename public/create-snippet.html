@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zniply | Crear Snippet</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <header class="header">
+        <a href="index.html"><h1 class="title">Zniply</h1></a>
+      </header>
+
+      <div id="app" class="container">
+        <form id="form" class="form">
+          <div class="form__div">
+            <label class="label form__name-label" for="name"
+              >Snippet Name:</label
+            >
+            <input
+              type="text"
+              class="form__input-name name"
+              id="name"
+              name="name"
+              placeholder="Nombre del snippet..."
+              maxlength="24"
+            />
+          </div>
+
+          <div class="form__div-snippet">
+            <label class="label form__snippet-label" for="snippet"
+              >Snippet:</label
+            >
+            <textarea
+              class="form__snippet-textarea snippet"
+              name="snippet"
+              id="snippet"
+              placeholder="Escribe tu snippet aquí..."
+              rows="10"
+            ></textarea>
+          </div>
+
+          <input
+            id="button-save"
+            class="form__input-submit"
+            type="submit"
+            value="Guardar"
+          />
+        </form>
+      </div>
+
+      <footer class="footer">Hecho por EdenBlood</footer>
+    </div>
+
+    <div class="notification-container"></div>
+    <script type="module" src="/src/createSnippet.js"></script>
+  </body>
+</html>

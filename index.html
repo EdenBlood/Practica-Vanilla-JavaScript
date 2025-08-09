@@ -9,51 +9,22 @@
   <body>
     <div class="main-container">
       <header class="header">
-        <h1 class="title">Zniply</h1>
+        <nav>
+          <a href="./index.html" class="nav__link"><h1 class="">Zniply</h1></a>
+          <a href="/create-snippet.html" class="nav__link">Crear Snippets</a>
+        </nav>
       </header>
 
-      <div id="app" class="container">
-        <form id="form" class="form">
-          <div class="alert hidden">Todos los campos son obligatorios</div>
+      <main id="app" class="container">
+        <h1 class="title title__snippets">Mis Snippets</h1>
 
-          <div class="form__div">
-            <label class="label form__name-label" for="name"
-              >Snippet Name:</label
-            >
-            <input
-              type="text"
-              class="form__input-name name"
-              id="name"
-              name="name"
-              placeholder="Nombre del snippet..."
-              maxlength="24"
-            />
-          </div>
-
-          <div class="form__div-snippet">
-            <label class="label form__snippet-label" for="snippet"
-              >Snippet:</label
-            >
-            <textarea
-              class="form__snippet-textarea snippet"
-              name="snippet"
-              id="snippet"
-              placeholder="Escribe tu snippet aquí..."
-              rows="10"
-            ></textarea>
-          </div>
-
-          <input
-            id="button-save"
-            class="form__input-submit"
-            type="submit"
-            value="Guardar"
-          />
-        </form>
-      </div>
+        <div id="snippets__container" class="snippets__container"></div>
+      </main>
 
       <footer class="footer">Hecho por EdenBlood</footer>
     </div>
-    <script type="module" src="/src/main.js"></script>
+
+    <div class="notification-container"></div>
+    <script type="module" src="/src/showSnippets.js"></script>
   </body>
 </html>
